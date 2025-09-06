@@ -1,0 +1,89 @@
+{
+  "routines": [
+    {
+      "day": "Monday",
+      "classes": []
+    },
+    {
+      "day": "Tuesday",
+      "classes": [
+        {
+          "startTime": "10:30",
+          "endTime": "1:00",
+          "subjectCode": "CSEUGPC25",
+          "room": "708 Lab"
+        },
+        {
+          "startTime": "1:40",
+          "endTime": "2:40",
+          "subjectCode": "MBAUGHU01",
+          "room": "RB06"
+        }
+      ]
+    },
+    {
+      "day": "Wednesday",
+      "classes": []
+    },
+    {
+      "day": "Thursday",
+      "classes": [
+        {
+          "startTime": "12:00",
+          "endTime": "1:00",
+          "subjectCode": "CSEUGPC24",
+          "room": "RB06"
+        },
+        {
+          "startTime": "1:40",
+          "endTime": "3:40",
+          "subjectCode": "CSEUGPE12",
+          "room": "RB06"
+        },
+        {
+          "startTime": "3:40",
+          "endTime": "4:40",
+          "subjectCode": "CSEUGPE19",
+          "room": "RB06"
+        }
+      ]
+    },
+    {
+      "day": "Friday",
+      "classes": []
+    }
+  ],
+
+  "subjects": [
+    {
+      "name": "Machine Learning & Soft Computing",
+      "teacher": "Sayed Umer",
+      "code": "CSEUGPC24"
+    },
+    {
+      "name": "Industrial Economics & Management",
+      "teacher": "unknown",
+      "code": "MBAUGHU01"
+    },
+    {
+      "name": "Internet of Things",
+      "teacher": "Ahasan Mollik",
+      "code": "CSEUGPE12"
+    },
+    {
+      "name": "E-Commerce and ERP",
+      "teacher": "Dr. Khondekar Lutful Hassan",
+      "code": "CSEUGPE19"
+    },
+    {
+      "name": "Machine Learning & Soft Computing Lab",
+      "teacher": "Sayed Umer",
+      "code": "CSEUGPC25"
+    },
+    {
+      "name": "Soft Skills",
+      "teacher": "unknown",
+      "code": "MBAUGHU03"
+    }
+  ]
+}

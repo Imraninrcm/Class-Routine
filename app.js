@@ -1,26 +1,25 @@
-const days = document.querySelector("#days");
-const dayContainers = {
-  monday: document.querySelector("#monday"),
-  tuesday: document.querySelector("#tuesday"),
-  wednesday: document.querySelector("#wednesday"),
-  thursday: document.querySelector("#thursday"),
-  friday: document.querySelector("#friday"),
-};
+const express = require("express");
+const app = express();
+const path = require("path");
+const fs = require("fs");
 
-// Initially hide all days except Monday
-Object.keys(dayContainers).forEach((day) => {
-  if (day !== "monday") {
-    dayContainers[day].classList.add("none");
-  }
+app.use(express.static(path.join(__dirname, "/public")));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
+app.get("/", (req, res) => {
+  const filePath = path.join(__dirname, "public", "routine.json");
+
+  fs.readFile(filePath, "utf8", (err, data) => {
+    if (err) {
+      return res.status(500).send("Error reading JSON file.");
+    }
+    const routine = JSON.parse(data);
+    res.render("index", { routine }); // Pass routine to EJS
+  });
 });
 
-days.addEventListener("input", () => {
-  // Hide all days
-  Object.keys(dayContainers).forEach((day) => {
-    dayContainers[day].classList.add("none");
-  });
-
-  // Show the selected day
-  const selectedDay = days.options[days.selectedIndex].text.toLowerCase();
-  dayContainers[selectedDay].classList.remove("none");
+// Server port
+app.listen(8080, () => {
+  console.log("Server is listening on port 8080");
 });

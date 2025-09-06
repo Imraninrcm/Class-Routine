@@ -1,0 +1,24 @@
+{
+  "name": "class-routine",
+  "version": "1.0.0",
+  "description": "This an Class routine app made using Forntend technologies",
+  "homepage": "https://github.com/Imraninrcm/Class-Routine#readme",
+  "bugs": {
+    "url": "https://github.com/Imraninrcm/Class-Routine/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Imraninrcm/Class-Routine.git"
+  },
+  "license": "ISC",
+  "author": "Imran Ali",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
